@@ -42,6 +42,10 @@ class Reservation extends Model
     protected $dates = [
         'from', 'to'
     ];
+
+    protected $casts = [
+        'from', 'to'
+    ];
 }
 
 ```
