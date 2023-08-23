@@ -40,11 +40,13 @@ namespace App\Nova;
 class Reservation extends Model
 {
     protected $dates = [
-        'from', 'to'
+        'from',
+        'to',
     ];
 
     protected $casts = [
-        'from', 'to'
+        'from' => 'date',
+        'to' => 'date',
     ];
 }
 
